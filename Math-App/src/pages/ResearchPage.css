@@ -1,0 +1,271 @@
+/* ─── Research Page Layout ─── */
+.research-page {
+    min-height: calc(100vh - 80px);
+    padding: 0 20px 48px;
+    background: linear-gradient(160deg, #EEF0FF 0%, #F0FFF8 100%);
+}
+
+.research-header {
+    text-align: center;
+    padding: 32px 0 24px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.research-sub {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+/* ─── Papers Grid ─── */
+.papers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 820px;
+    margin: 0 auto 40px;
+}
+
+.paper-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+
+.paper-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.paper-card-top {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 20px 14px;
+    border-bottom: 2px solid;
+}
+
+.paper-emoji-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.paper-emoji {
+    font-size: 1.7rem;
+}
+
+.paper-meta {
+    flex: 1;
+}
+
+.paper-tag {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.paper-title {
+    font-size: 0.98rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    line-height: 1.35;
+    margin: 0;
+}
+
+/* ─── Findings List ─── */
+.paper-findings {
+    list-style: none;
+    padding: 14px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.paper-findings li {
+    display: flex;
+    gap: 10px;
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    line-height: 1.5;
+    align-items: flex-start;
+}
+
+.finding-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+/* ─── App Implication ─── */
+.paper-implication {
+    margin: 0 20px 14px;
+    padding: 10px 14px;
+    border-left: 3px solid;
+    border-radius: 0 10px 10px 0;
+    background: rgba(168, 181, 224, 0.08);
+    margin-top: 14px;
+}
+
+.implication-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.paper-implication p {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ─── Teaching Tip (collapsible) ─── */
+.paper-tip {
+    margin: 0 20px 14px;
+    background: linear-gradient(135deg, rgba(255, 230, 109, 0.2), rgba(245, 200, 66, 0.1));
+    border-left: 4px solid #F5C842;
+    border-radius: 0 10px 10px 0;
+    padding: 10px 14px;
+    overflow: hidden;
+}
+
+.paper-tip p {
+    font-size: 0.85rem;
+    color: #7a6000;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ─── Paper Footer ─── */
+.paper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-tip {
+    background: rgba(168, 181, 224, 0.15);
+    border: 1.5px solid rgba(168, 181, 224, 0.4);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    color: var(--text-mid);
+    transition: background 0.15s;
+}
+
+.btn-tip:hover {
+    background: rgba(168, 181, 224, 0.28);
+}
+
+.paper-links {
+    display: flex;
+    gap: 10px;
+}
+
+.paper-link {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--teal-dark);
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: rgba(78, 205, 196, 0.1);
+    border: 1px solid rgba(78, 205, 196, 0.3);
+    transition: background 0.15s;
+}
+
+.paper-link:hover {
+    background: rgba(78, 205, 196, 0.22);
+}
+
+/* ─── Takeaways ─── */
+.takeaways-section {
+    max-width: 820px;
+    margin: 0 auto 32px;
+}
+
+.takeaways-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.takeaways-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.takeaway-card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 16px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.takeaway-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.takeaway-title {
+    font-size: 0.88rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin: 0 0 6px;
+}
+
+.takeaway-body {
+    font-size: 0.78rem;
+    color: var(--text-mid);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ─── Citation Footer ─── */
+.citation-footer {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+@media (max-width: 640px) {
+    .takeaways-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .paper-card-top {
+        flex-direction: column;
+    }
+
+    .paper-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

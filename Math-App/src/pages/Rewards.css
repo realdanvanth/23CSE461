@@ -1,0 +1,209 @@
+.rewards-page {
+    min-height: calc(100vh - 80px);
+    padding: 20px 20px 40px;
+    background: linear-gradient(160deg, #FFFBE0 0%, #EEF0FF 60%, #E8F8FF 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative stars */
+.deco-star {
+    position: absolute;
+    animation: float 3s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.rewards-header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Star Hero */
+.star-hero {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-star {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.star-count {
+    color: var(--text-dark);
+    line-height: 1;
+}
+
+.current-rank {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-top: 12px;
+}
+
+/* Milestone Progress */
+.milestone-progress {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.milestone-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: var(--text-mid);
+}
+
+.milestone-bar {
+    height: 12px;
+    background: var(--lavender-light);
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.milestone-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--teal), var(--teal-dark));
+    border-radius: 100px;
+}
+
+/* Stats */
+.stats-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat-card {
+    flex: 1;
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 16px 12px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+}
+
+.stat-num {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--text-dark);
+}
+
+.stat-lbl {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Badges */
+.badges-section {
+    position: relative;
+    z-index: 1;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badges-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.badge-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    border-radius: var(--radius-md);
+    background: white;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+}
+
+.badge-card.earned {
+    border-left: 5px solid var(--teal);
+}
+
+.badge-card.locked {
+    opacity: 0.55;
+    border-left: 5px solid var(--lavender-light);
+}
+
+.badge-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.badge-info {
+    flex: 1;
+}
+
+.badge-name {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--text-dark);
+}
+
+.badge-desc {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.badge-check {
+    width: 28px;
+    height: 28px;
+    background: var(--teal);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
